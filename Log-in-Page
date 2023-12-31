@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            
+    height: 100vh;
+    justify-content: center;
+    background: linear-gradient(45deg,rgba(157, 203, 193, 0.852),rgba(125, 73, 141, 0.818),rgba(57, 2, 141, 0.933));
+        }
+        .container{
+            border: 2px solid;
+            border-radius: 63% 37% 67% 33% / 30% 35% 65% 70% ;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.7), inset 4px 4px 4px 1px rgb(0 0 0 / 48%),inset -2px -2px 4px 1px rgb(0 0 0 / 48%);
+            justify-content: space-evenly;
+            height: 375px;
+            background:linear-gradient(45deg,rgba(255, 255, 255, 0.774),rgba(184, 180, 180, 0.878),rgba(139, 137, 137, 0.719));
+    width: 375px;
+    align-items: center;
+    overflow: hidden;
+        }
+        
+        body::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            height: 50%;
+            left: 50%;
+            top: 50%;
+            width: 50%;
+            filter: blur(10px);
+            background:linear-gradient(45deg,rgba(203, 208, 219, 0.826) ,rgba(107, 79, 221, 0.712));
+            border-top: 1px solid rgba(255, 255, 255, 0.678);
+        }
+        .container form{
+            display: flex;
+    overflow: hidden;
+    height: 219px;
+    /* border: 2px solid; */
+    padding: 8px 9px;
+    margin: 11px 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+        }
+        .container button{
+            margin: 2px 3px;
+    padding: 4px 6px;
+    width: 105px;
+    /* position: absolute; */
+    border: none;
+    font-weight:700;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* height: 30px; */
+    cursor: pointer;
+    height: auto;
+            transition: all .8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow:  6px 6px 8px 1px rgba(0, 0, 0, 0.7), inset 4px 4px 4px 1px rgb(0 0 0 / 48%),inset -2px -2px 4px 1px rgb(0 0 0 / 48%);
+     background-color: transparent;
+    /* width: 80px; */
+    /* letter-spacing: .2em; */
+        }
+        .container h2{
+            font-size: 2.1em;
+    font-weight: 500;
+    text-shadow: -3px -2px 6px rgba(0, 0, 0, 0.525);
+}
+
+
+        
+        .container p{
+            /* border: 2px solid; */
+    font-size: 20px;
+    margin-top: 10px;
+    width: -webkit-fill-available;
+        }
+        .container input{
+            border-bottom: 2px solid;
+    border-top: 0;
+    padding: 3px 4px;
+    margin: 10px 2px;
+    height: 22px;
+    box-shadow: 0px 6px 3px rgb(0 0 0 / 50%);
+    width: 210px;
+    background: transparent;
+    cursor: pointer;
+    border-left: 0;
+        }
+        .container button:hover{
+            background: linear-gradient(60deg,rgba(170, 187, 205, 0.896),rgba(61, 117, 190, 0.819));
+            transform: translateY(-5px);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="">
+           <p>Name</p> 
+            <input type="text" name="" id="name" required >
+           <p> Password</p>
+            <input type="password" name="" id="password" required>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+</body>
+</html>
